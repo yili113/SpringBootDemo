@@ -43,8 +43,10 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
                 // 静态资源；  *.css , *.js
                 // SpringBoot已经做好了静态资源映射
                 // 拦截所有的页面 但是要排除登录请求和index页面
-                registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
-                        .excludePathPatterns("/index.html","/","/user/login");
+
+                // 暂时关掉登录拦截器
+//                registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**")
+//                        .excludePathPatterns("/index.html","/","/user/login");
             }
         };
         return adapter;

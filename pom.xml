@@ -27,6 +27,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--引入web模块默认就是使用嵌入式的Tomcat作为Servlet容器-->
         </dependency>
         <!--引入jquery-webjar 在访问的时候只需要写webjars下面资源的名称即可-->
         <dependency>
