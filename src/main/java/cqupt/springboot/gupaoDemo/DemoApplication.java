@@ -17,7 +17,7 @@ public class DemoApplication {
     // 模拟自动装配
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(Application.class, args);
+        ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(DemoApplication.class, args);
         // 拿到自定义的自动装配得到的bean对象
         System.out.println(configurableApplicationContext.getBean(RedisTemplateService.class));
     }

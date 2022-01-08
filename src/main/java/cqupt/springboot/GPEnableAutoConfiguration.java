@@ -1,6 +1,7 @@
 package cqupt.springboot;
 
 import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
+import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.*;
 
@@ -13,5 +14,6 @@ import java.lang.annotation.*;
 @Documented
 @Inherited
 @AutoConfigurationPackage
+@Import(GPAutoImportSelector.class)
 public @interface GPEnableAutoConfiguration {
 }
